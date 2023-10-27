@@ -1,0 +1,25 @@
+.companySection {
+    .container {
+      display: flex;
+      justify-content: center;
+  
+      .companies {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+  
+        img {
+          max-width: 40%;
+        }
+  
+        @media (min-width: 992px) {
+          width: 80%;
+        }
+        @media (min-width: 1200px) {
+          flex-wrap: nowrap;
+          width: 80%;
+        }
+      }
+    }
+  }

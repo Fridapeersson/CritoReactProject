@@ -1,0 +1,88 @@
+.buttonTheme {
+    margin: 10px;
+    background: #f9d783;
+    border-radius: 20px;
+    border: 1px solid #f9d783;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+  
+    i {
+      margin: 5px;
+      font-size: 12px;
+    }
+  
+    &:hover {
+      i {
+        color: #fff;
+        transition: 0.3s;
+      }
+      background: #191919;
+      border-color: #191919;
+      color: white;
+      transition: color 0.3s, background 0.3s;
+    }
+  }
+  
+  .blackButton {
+    margin: 10px;
+    background: #191919;
+    border-radius: 20px;
+    border-color: #191919;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+  
+    i {
+      color: #fff;
+      margin: 5px;
+    }
+  
+    &:hover {
+      i {
+        color: #191919;
+        transition: 0.3s;
+      }
+      background: #fff;
+      color: #191919;
+      border: solid #191919 1px;
+      transition: color 0.3s, background 0.3s;
+    }
+  }
+  
+  .transparentButton {
+    margin: 10px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+  
+    i {
+      color: #191919;
+      margin: 5px;
+      font-size: 12px;
+    }
+  
+    &:hover {
+      i {
+        color: #fff;
+        transition: 0.3s;
+      }
+      background: #191919;
+      color: #fff;
+      border: solid #191919 1px;
+
+      transition: color 0.3s, background 0.3s;
+    }
+  }

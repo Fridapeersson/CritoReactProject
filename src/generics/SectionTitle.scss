@@ -1,0 +1,35 @@
+.sectionTitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 500;
+  
+    @media (min-width: 992px) {
+      padding-left: 60px;
+      //       align-items: start;
+    }
+  
+    p {
+      color: #f94d1c;
+      font-size: 16px;
+      font-weight: 500;
+  
+      @media (min-width: 992px) {
+        font-size: 18px;
+        margin-top: 0;
+      }
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+  
+      @media (min-width: 992px) {
+        font-size: 35px;
+      }
+      @media (min-width: 1400px) {
+        font-size: 45px;
+      }
+    }
+  }

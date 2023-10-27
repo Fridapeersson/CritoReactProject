@@ -1,0 +1,121 @@
+.ourServicesSection {
+  background: #f0efe9;
+  position: relative;
+
+  .backgroundLine {
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .container {
+    .sectionTitle {
+      @media (min-width: 992px) {
+        padding: 20px;
+        text-align: start;
+        margin-left: 50px;
+      }
+      @media (min-width: 1200px) {
+        width: 40%;
+      }
+    }
+    .boxesContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 90%;
+      margin: 0 auto;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: auto;
+        gap: 40px;
+      }
+
+      @media (min-width: 992px) {
+        margin-top: 20px;
+        width: 70%;
+      }
+
+      @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 91%;
+      }
+
+      .boxes {
+        background: #fff;
+        padding: 20px;
+
+        @media (min-width: 992px) {
+          padding: 20px;
+          margin-bottom: 50px;
+        }
+
+        // Hover effekt när man hovrar över boxarna
+        &:hover {
+          background: #f9d783;
+          transition: background 0.3s;
+
+          .blackButton {
+            background: #fff;
+            transition: background 0.3s;
+
+            i {
+              color: #191919;
+            }
+          }
+        }
+
+        i {
+          color: #fff;
+        }
+
+        .line {
+          border: solid #191919 1px;
+          width: 20%;
+          margin-top: 20px;
+          margin-left: 3px;
+        }
+
+        h3 {
+          font-weight: 700;
+          margin: 20px 0;
+        }
+
+        .boxesButton {
+          display: flex;
+          justify-content: end;
+
+          .blackButton {
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .browseServices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .buttonTheme {
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        @media (min-width: 992px) {
+          // width: 221px;
+        }
+      }
+    }
+  }
+}

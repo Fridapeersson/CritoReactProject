@@ -1,0 +1,63 @@
+.showcase {
+    background-color: #f0efe9;
+  
+    @media (min-width: 1200px) {
+      position: relative;
+      z-index: 0;
+    }
+  
+    .backgroundLine {
+      display: none;
+      @media (min-width: 1200px) {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
+      }
+    }
+    .container {
+      .showcaseContent {
+        display: flex;
+  
+        .headerAndText {
+          h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-top: 30px;
+  
+            @media (min-width: 992px) {
+              font-size: 76px;
+              margin-top: 100px;
+            }
+            @media (min-width: 1400px) {
+              font-size: 86px;
+            }
+          }
+          p {
+            margin-top: 20px;
+            margin-bottom: 30px;
+          }
+          .buttonTheme,
+          .transparentButton {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto;
+  
+            @media (min-width: 765px) {
+              display: inline-flex;
+              margin: 20px;
+              margin-bottom: 40px;
+            }
+          }
+        }
+        .showcaseImg {
+          display: none;
+  
+          @media (min-width: 1400px) {
+            display: inline-block;
+            margin-right: -50px;
+          }
+        }
+      }
+    }
+  }
