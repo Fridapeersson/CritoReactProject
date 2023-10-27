@@ -4,7 +4,7 @@ import Button from "../../generics/Button";
 import "./Header.scss";
 import { Link, NavLink } from "react-router-dom";
 import ContactInfo from "./ContactInfo";
-import SocialMedia from "./SocialMedia";
+import SocialMedia from "../../generics/SocialMedia";
 
 
 const Header = () => {

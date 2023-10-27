@@ -7,9 +7,6 @@ const SocialMedia = ({icon, link}) => {
         <Link to={link} target="_blank">
             {<i className={`fa-brands fa-${icon}`}></i>}
         </Link>
-      {/* <a href="https://www.facebook.com" target="_blank">
-        <i className="fa-brands fa-facebook"></i>
-      </a> */}
     </>
   );
 };

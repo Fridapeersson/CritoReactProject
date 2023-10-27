@@ -1,0 +1,79 @@
+.projectAndCaseSection {
+    .container {
+      .sectionTitle {
+        @media (min-width: 992px) {
+          align-items: center;
+        }
+      }
+  
+      .projectAndCases {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+  
+        @media (min-width: 768px) {
+          grid-template-columns: 1fr 1fr;
+        }
+  
+        article {
+          @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+          }
+          img {
+            width: 100%;
+            height: auto;
+  
+            @media (min-width: 768px) {
+              height: 250px;
+            }
+            @media (min-width: 992px) {
+              height: 300px;
+            }
+            @media (min-width: 1200px) {
+              height: 350px;
+            }
+  
+            @media (min-width: 1400px) {
+              width: 645px;
+              height: 455px;
+            }
+          }
+          h3 {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+            border-bottom: solid #dad9d3 1px;
+          }
+          a {
+            text-decoration: none;
+            color: #191919;
+            display: block;
+            text-align: right;
+  
+            &:hover {
+              background: #f9d783;
+              text-decoration: underline;
+              transition: 0.3s;
+              border-radius: 15px;
+            }
+  
+            @media (min-width: 1400px) {
+              padding: 15px;
+            }
+  
+            i {
+              @media (min-width: 1400px) {
+                margin-left: 3px;
+              }
+            }
+          }
+        }
+      }
+      .centerButton {
+        margin-top: 45px;
+        margin-bottom: 90px;
+      }
+    }
+  }

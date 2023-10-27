@@ -2,8 +2,45 @@ import React from "react";
 import whiteLogo from "../../assets/images/logotype-white.svg";
 import footerBackgroundLine from "../../assets/images/backgroundLines/background-lines-white-right.svg";
 import "./Footer.scss";
+import FooterBoxes from "./FooterBoxes";
+import SocialMedia from "../../generics/SocialMedia";
 
 const Footer = () => {
+
+  const footerBoxes = [
+    {title: "Company", links: [
+      {url: "/about", urlText: "About"},
+      {url: "/features", urlText: "Features"},
+      {url: "/works", urlText: "Works"},
+      {url: "/career", urlText: "Career"}
+    ]},
+    {title: "Help", links: [
+      {url: "/support", urlText: "Customer Support"},
+      {url: "/delivery", urlText: "Delivery Details"},
+      {url: "/termsandconditions", urlText: "Terms & Conditions"},
+      {url: "/privace", urlText: "Prvacy Policy"}
+    ]},
+    {title: "Resources", links: [
+      {url: "/ebooks", urlText: "Free eBooks"},
+      {url: "/developmenttutorial", urlText: "Development Tutorial"},
+      {url: "/blog", urlText: "How To - Blog"},
+      {url: "/youtubeplaylist", urlText: "Youtube Playlist"}
+    ]},
+    {title: "Resources", links: [
+      {url: "/ebooks", urlText: "Free eBooks"},
+      {url: "/developmenttutorial", urlText: "Development Tutorial"},
+      {url: "/blog", urlText: "How To - Blog"},
+      {url: "/youtubeplaylist", urlText: "Youtube Playlist"}
+    ]}
+  ]
+
+
+  const socialMedias = [
+    {link: "https://www.facebook.com", icon: "facebook"},
+    {link: "https://www.twitter.com", icon: "twitter"},
+    {link: "https://www.instagram.com", icon: "instagram"},
+    {link: "https://www.linkedin.com", icon: "linkedin"},
+  ]
 
   return (
     <footer className="footerSection">
@@ -20,78 +57,12 @@ const Footer = () => {
             </p>
           </div>
           <div className="linkContainer">
-            {/* <!-- box 2 --> */}
-            <div className="box">
-              <h3>Company</h3>
-              <div className="links">
-                <p>
-                  <a href="#">About</a>
-                </p>
-                <p>
-                  <a href="#">Features</a>
-                </p>
-                <p>
-                  <a href="#">Works</a>
-                </p>
-                <p>
-                  <a href="#">Career</a>
-                </p>
-              </div>
-            </div>
-            {/* <!-- box 3 --> */}
-            <div className="box">
-              <h3>Help</h3>
-              <div className="links">
-                <p>
-                  <a href="#">Customer Support</a>
-                </p>
-                <p>
-                  <a href="#">Delivery Details</a>
-                </p>
-                <p>
-                  <a href="#">Terms & Conditions</a>
-                </p>
-                <p>
-                  <a href="#">Privacy Policy</a>
-                </p>
-              </div>
-            </div>
-            {/* <!-- box 4 --> */}
-            <div className="box">
-              <h3>Resources</h3>
-              <div className="links">
-                <p>
-                  <a href="#">Free eBooks</a>
-                </p>
-                <p>
-                  <a href="#">Development Tutorial</a>
-                </p>
-                <p>
-                  <a href="#">How to - Blog</a>
-                </p>
-                <p>
-                  <a href="#">Youtube Playlist</a>
-                </p>
-              </div>
-            </div>
-            {/* <!-- box 5 --> */}
-            <div className="box">
-              <h3>Link</h3>
-              <div className="links">
-                <p>
-                  <a href="#">Free eBooks</a>
-                </p>
-                <p>
-                  <a href="#">Development Tutorial</a>
-                </p>
-                <p>
-                  <a href="#">How to - Blog</a>
-                </p>
-                <p>
-                  <a href="#">Youtube Playlist</a>
-                </p>
-              </div>
-            </div>
+          
+            {
+              footerBoxes.map((box, index) => (
+                <FooterBoxes key={index} title={box.title} links={box.links} />
+              ))
+            }
           </div>
         </div>
       </div>
@@ -102,10 +73,11 @@ const Footer = () => {
         <div className="container">
           <p>© 2023 Crito - Consulting Company Inc. All Rights Reserved.</p>
           <div className="socials">
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-linkedin"></i>
+            {
+              socialMedias.map((socialMedia, index) => (
+                <SocialMedia key={index} link={socialMedia.link} icon={socialMedia.icon} />
+              ))  
+            }
           </div>
         </div>
       </div>
