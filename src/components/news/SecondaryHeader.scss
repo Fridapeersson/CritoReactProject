@@ -1,0 +1,50 @@
+.secondaryHeaderSection {
+  .secondaryHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0efe9;
+    padding: 50px;
+    position: relative;
+    margin-bottom: 50px;
+
+    .backgroundImage {
+        display: none;
+      
+        @media(min-width: 992px) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 20px;
+      p {
+        padding-bottom: 20px;
+        
+        
+        .active {
+            color: #191919;
+        }
+        a {
+            text-decoration: none;
+            color: #b1a2a2;   
+
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+  }
+}

@@ -10,11 +10,11 @@ import Button from "../../../generics/Button";
 const ArticleAndNews = () => {
 
     const articleBoxes = [
-        {url: "/articleandnews/digitalizationinclassroom", image: article1Img, imageAltText: "Girl", date: "25", title: "How To Use Digitalization In The Classroom", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {url: "/articleandnews/digitalizationinclassroom", image: article1Img, imageAltText: "Girl", date: "25", month: "Mar", title: "How To Use Digitalization In The Classroom", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
 
-        {url: "/articleandnews/implementchatgpt", image: article2Img, imageAltText: "chatgpt", date: "17",  title: "How To Implement ChatGpt In Your Projects", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
+        {url: "/articleandnews/implementchatgpt", image: article2Img, imageAltText: "chatgpt", date: "17", month: "Mar",  title: "How To Implement ChatGpt In Your Projects", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."},
         
-        {url: "/articleandnews/moderncssdesign", image: article3Img, imageAltText: "Books", date: "13", title: "The Guide To Support modern CSS Design", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."}
+        {url: "/articleandnews/moderncssdesign", image: article3Img, imageAltText: "Books", date: "13", month: "Mar", title: "The Guide To Support modern CSS Design", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero."}
     ]
 
   return (
@@ -33,7 +33,7 @@ const ArticleAndNews = () => {
           <article className="articles">
             {
                 articleBoxes.map((article, index) => (
-                    <ArticleBoxes key={index} url={article.url} image={article.image} imageAltText={article.imageAltText} date={article.date} title={article.title} description={article.description} />
+                    <ArticleBoxes key={index} url={article.url} image={article.image} imageAltText={article.imageAltText} date={article.date} month={article.month} title={article.title} description={article.description} />
                 ))
             }
           </article>

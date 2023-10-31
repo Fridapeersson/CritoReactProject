@@ -8,10 +8,10 @@ import backgroundLine from "../../../assets/images/backgroundLines/background-li
 const OurServices = () => {
 
     const boxes = [
-        {title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/businessadvice"},
-        {title: "Startup Business", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/startupbusiness"},
-        {title: "Financial Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/financialadvice"},
-        {title: "Risk Management", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/riskmanagement"}
+        {title: "Business Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/ourservices/businessadvice"},
+        {title: "Startup Business", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/ourservices/startupbusiness"},
+        {title: "Financial Advice", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/ourservices/financialadvice"},
+        {title: "Risk Management", description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.", url: "/ourservices/riskmanagement"}
     ]
 
   return (
@@ -32,7 +32,7 @@ const OurServices = () => {
           </div>
 
           <div className="browseServices">
-            <Button text="Browse Services" url="/browseservices" />
+            <Button text="Browse Services" url="/ourservices/browseservices" />
           </div>
         </div>
       </div>

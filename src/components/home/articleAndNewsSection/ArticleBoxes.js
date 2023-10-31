@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TextComponent from "../../../generics/TextComponent";
 
-const ArticleBoxes = ({ url, image, imageAltText, date, title, description }) => {
+const ArticleBoxes = ({ url, image, imageAltText, date, month, title, description }) => {
   return (
     <div className="article">
       <Link to={url}>
@@ -9,13 +10,12 @@ const ArticleBoxes = ({ url, image, imageAltText, date, title, description }) =>
           <img src={image} alt={imageAltText} />
           <p>
             <span>{date}</span> 
-            Mar
+            {month}
           </p>
         </div>
         <div className="articleText">
-          <p className="header">Business</p>
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <p>Business</p>
+          <TextComponent title={title} description={description} />
         </div>
       </Link>
     </div>

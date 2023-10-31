@@ -5,6 +5,7 @@ import founder from "../../../assets/images/aboutCompany/founder.jpg";
 import founderLines from "../../../assets/images/aboutCompany/founderLines (1).png";
 import { Link } from "react-router-dom";
 import Button from "../../../generics/Button";
+import TextComponent from "../../../generics/TextComponent";
 
 const AboutCompany = () => {
   return (

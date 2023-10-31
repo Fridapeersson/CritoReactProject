@@ -74,10 +74,7 @@
           margin-right: -80px;
         }
   
-        .box1,
-        .box2,
-        .box3,
-        .box4 {
+        .box {
           margin-bottom: 30px;
   
           @media (min-width: 992px) {
@@ -97,6 +94,7 @@
   
           i {
             font-size: 20px;
+            margin-bottom: 15px;
   
             @media (min-width: 992px) {
               font-size: 22px;

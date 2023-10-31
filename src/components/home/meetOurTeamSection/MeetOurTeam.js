@@ -48,13 +48,11 @@ const MeetOurTeam = () => {
 
         <div className="team">
           <div className="cards">
-            
             {
                 teamCards.map((card, index) => (
                     <TeamCards key={index} image={card.image} imageAltText={card.imageAltText} title={card.title} description={card.description} />
                 ))
             }
-
           </div>
           <div className="dots">
             <div className="dot">.</div>

@@ -1,0 +1,48 @@
+.signUpForNewsSection {
+  background: #f0efe9;
+  position: relative;
+  padding-bottom: 90px;
+}
+.signUpForNewsSection .backgroundLine {
+  display: none;
+}
+@media (min-width: 992px) {
+  .signUpForNewsSection .backgroundLine {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+  }
+}
+.signUpForNewsSection .container .signUpForNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .signUpForNewsSection .container .signUpForNews .newsUpdateText {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+}
+.signUpForNewsSection .container .signUpForNews .newsUpdateText h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .signUpForNewsSection .container .signUpForNews .newsUpdateText h2 {
+    margin-bottom: 0;
+    font-size: 35px;
+  }
+}
+.signUpForNewsSection .container .signUpForNews .newsUpdateText form .input {
+  background: #fff;
+  font-style: italic;
+  color: RGBA(25, 25, 25, 0.5);
+  border-radius: 25px;
+  padding: 12px 25px;
+  margin-right: 10px;
+}

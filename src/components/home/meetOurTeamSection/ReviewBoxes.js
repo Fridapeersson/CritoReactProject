@@ -1,4 +1,5 @@
 import React from "react";
+import TextComponent from "../../../generics/TextComponent";
 
 const ReviewBoxes = ({ reviewText, image, imageAltText, title, description }) => {
   return (
@@ -12,12 +13,11 @@ const ReviewBoxes = ({ reviewText, image, imageAltText, title, description }) =>
       </div>
       <p className="reviewText">{reviewText}</p>
       <div className="user">
-        <div className="imageContainer">
           <img src={image} alt={imageAltText} />
-        </div>
         <div className="headerAndText">
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <TextComponent title={title} description={description} />
+          {/* <h3>{title}</h3>
+          <p>{description}</p> */}
         </div>
       </div>
     </div>

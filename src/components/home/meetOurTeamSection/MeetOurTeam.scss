@@ -157,7 +157,10 @@
               }
               .reviewText {
                 @media (min-width: 992px) {
-                  width: 230px;
+                  width: 250px;
+                }
+                @media (min-width: 1400px) {
+                  width: 300px;
                 }
               }
               // User Reviews container
@@ -171,9 +174,15 @@
                   align-items: center;
                 }
                 img {
+                  display: none;
                   margin-right: 15px;
+                  @media (min-width: 769px) {
+                    display: block;
+                    width: 12%;
+                  }
                   @media (min-width: 992px) {
-                    width: 80%;
+                    display: block;
+                    width: 20%;
                   }
                 }
                 h3 {

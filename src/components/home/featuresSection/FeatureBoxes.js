@@ -1,11 +1,12 @@
 import React from "react";
+import TextComponent from "../../../generics/TextComponent";
 
 const FeatureBoxes = ({title, description, icon}) => {
   return (
-    <div className="box1">
+    <div className="box">
       {<i className={`fa-solid fa-${icon}`}></i>}
-      <h6 className="header">{title}</h6>
-      <p>{description}</p>
+      <TextComponent title={title} description={description} />
+
     </div>
   );
 };

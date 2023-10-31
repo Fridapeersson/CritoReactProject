@@ -7,7 +7,7 @@ const ArticleBoxes = ({url, imgSrc, imgAltText, title}) => {
         <Link to={url} >
             <img src={imgSrc} alt={imgAltText}/>
           
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             Read More <i className="fa-solid fa-arrow-up-right arrow"></i>
         </Link>
     </article>
