@@ -1,0 +1,26 @@
+.scrollToTopButton {
+    @media(min-width: 1200px) {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        bottom: 100px;
+        right: 100px;
+        width: 40px;
+        height: 40px;
+        background: #191919;
+        border-radius: 50%;
+        z-index: 1;
+
+        
+        i {
+            color: #FFF;
+            font-size: 18px;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}

@@ -1,15 +1,16 @@
-.articleAndNewsSection {
+.articleFooterSection {
     .container {
       .articleAndNews {
         .sectionTitleWithButton{
             text-align: center;
             margin-bottom: 20px;
             margin-top: 50px;
+
             @media(min-width: 992px) {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-top: 50px;
+                padding-top: 100px;
 
             }
             @media(min-width: 992px) {
@@ -32,21 +33,31 @@
                     margin-right: 50px;
                 }
             }
-
         }
         .articles {
           display: flex;
           flex-direction: column;
           text-align: center;
-          align-items: center;
+          justify-content: center;
+
   
           @media (min-width: 769px) {
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            gap: 20px;
+          }
+          @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
           }
           .article {
             margin-bottom: 20px;
+
+            @media(min-width: 769px) {
+              
+            }
   
             @media (min-width: 992px) {
               margin: 20px;
@@ -64,10 +75,21 @@
             .imgContainer {
               position: relative;
               width: 100%;
+              
   
               img {
                 width: 100%;
                 z-index: -1;
+
+
+                @media(min-width: 769px) {
+
+                  height: 200px;
+                }
+                @media(min-width: 1400px) {
+
+                  height: 250px;
+                }
               }
               p {
                 display: flex;
@@ -128,6 +150,7 @@
         .dots {
           display: flex;
           justify-content: center;
+          padding-bottom: 90px;
           .dot {
             font-size: 70px;
             color: RGBA(25, 25, 25, 0.4);

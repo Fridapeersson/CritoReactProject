@@ -1,0 +1,28 @@
+.posts {
+    .link {
+        text-decoration: none;
+
+        &:hover {
+            background-color: green;
+        }
+
+        .title {
+            font-weight: 700;
+            color: #191919;
+            margin-top: 15px;
+            font-size: 16px;;
+        }
+        .pContainer{
+            border-bottom: solid #19191980 1px;
+            .date {
+                color: #191919;
+                // border-bottom: solid orange 1px;
+            }
+
+        }
+    }
+    // .line {
+    //     border-top: solid blue 1px; 
+    //     padding:10px;
+    // }
+}

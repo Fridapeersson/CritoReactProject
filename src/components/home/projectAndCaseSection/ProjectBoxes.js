@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ArticleBoxes = ({url, imgSrc, imgAltText, title}) => {
+const ProjectBoxes = ({url, imgSrc, imgAltText, title}) => {
   return (
     <article>
         <Link to={url} >
@@ -14,4 +14,4 @@ const ArticleBoxes = ({url, imgSrc, imgAltText, title}) => {
   );
 };
 
-export default ArticleBoxes;
+export default ProjectBoxes;

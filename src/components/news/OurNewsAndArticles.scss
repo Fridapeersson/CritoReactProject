@@ -9,9 +9,15 @@
 
         @media (min-width: 769px) {
           display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        @media (min-width: 1200px) {
+          display: grid;
           grid-template-columns: 1fr 1fr 1fr;
         }
         .article {
+          // border: solid red 1px;
+          height: 90%;
           margin-bottom: 20px;
 
           @media (min-width: 769px) {
@@ -37,6 +43,14 @@
             img {
               width: 100%;
               z-index: -1;
+              height: auto;
+
+              @media(min-width: 769px) {
+                height: 200px;
+              }
+              @media(min-width: 992px) {
+                height: 250px;
+              }
             }
             p {
               display: flex;
