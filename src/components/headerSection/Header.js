@@ -55,7 +55,7 @@ const Header = () => {
           <div className="mainMenu">
             <nav>
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/services">Service</NavLink>
+              <NavLink to="/service">Service</NavLink>
               <NavLink to="/news">News</NavLink>
               <NavLink to="/contact">Contact</NavLink>
             </nav>

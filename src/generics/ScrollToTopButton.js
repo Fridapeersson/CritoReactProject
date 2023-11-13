@@ -9,6 +9,9 @@ const AutoScrollToTop = () => {
         window.addEventListener("scroll", () => {
             setPosition(window.scrollY);
         })
+        return () => {
+            window.removeEventListener("scroll", () => {});
+        }
     }, []);
 
     const scrollToTop = () => {
@@ -17,7 +20,7 @@ const AutoScrollToTop = () => {
 
   return (
     <Link onClick={scrollToTop} className={`${position < 550 ? "hide" : ""} scrollToTopButton`} >
-        <i class="fa-solid fa-arrow-up"></i>
+        <i className="fa-solid fa-arrow-up"></i>
     </Link>
   )
 }

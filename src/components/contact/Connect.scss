@@ -1,0 +1,143 @@
+.contactSection {
+  position: relative;
+  background: #f0efe9;
+
+  img {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+      position: absolute;
+      top: 65px;
+    }
+  }
+  .container {
+    .homeConnect {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      p {
+        a {
+          text-decoration: none;
+          color: #191919;
+          margin-left: 15px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .home {
+          color: gray;
+          font-weight: 300;
+        }
+        .connect {
+          font-weight: 500;
+        }
+      }
+    }
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      padding-bottom: 40px;
+    }
+    img {
+      display: none;
+    }
+  }
+}
+
+.companyInfoSection {
+    .container {
+      .boxContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+  
+        @media (min-width: 768px) {
+          flex-direction: row;
+          justify-content: center;
+          gap: 80px;
+        }
+  
+        .boxes {
+          @media (min-width: 992px) {
+            display: flex;
+            justify-content: center;
+            border: solid rgba(25, 25, 25, 0.2) 1px;
+            padding: 20px;
+            gap: 10px;
+            text-align: left;
+            align-items: center;
+          }
+  
+          @media (min-width: 1400px) {
+            height: 206px;
+            width: 420px;
+          }
+  
+          i {
+            background: black;
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            margin-bottom: 10px;
+  
+            @media (min-width: 992px) {
+              margin-right: 20px;
+              font-size: 16px;
+              padding: 15px;
+            }
+  
+            @media (min-width: 1400px) {
+              font-size: 22px;
+              margin-bottom: 50px;
+            }
+          }
+          .boxHeaderAndText {
+            a {
+              text-decoration: none;
+  
+              &:hover {
+                text-decoration: underline;
+                color: #191919;
+              }
+              p {
+                padding: 0;
+                margin: 0;
+                color: rgba(25, 25, 25, 0.8);
+  
+                @media (min-width: 992px) {
+                  font-size: 15px;
+                }
+  
+                @media (min-width: 1400px) {
+                  font-size: 18px;
+                }
+              }
+            }
+            h3 {
+              @media (min-width: 992px) {
+                margin-bottom: 20px;
+                font-size: 22px;
+                font-weight: 700;
+              }
+  
+              @media (min-width: 1400px) {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .map {
+    .googleMap {
+      width: 100%;
+      padding-top: 40px;
+    }
+  }

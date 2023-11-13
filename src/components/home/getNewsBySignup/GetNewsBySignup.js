@@ -20,7 +20,7 @@ const GetNewsBySignup = () => {
                 placeholder="Example@example.com"
                 required
               />
-              <Button className="btn" type="yellow" text="Subscribe" url="/subscribe" />
+              <Button className="btn" type="yellow" text="Subscribe" url="#" />
             </form>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/headerSection/Header'
 import Footer from '../components/footer/Footer'
 import OurNewsAndArticles from "../components/news/OurNewsAndArticles";
-import SecondaryHeader from '../components/news/SecondaryHeader';
+import SecondaryHeader from '../components/news/SecondaryHeader'
 
 
 

@@ -6,20 +6,25 @@ import Header from '../headerSection/Header';
 import Footer from '../footer/Footer';
 import "./ArticleDetails.scss";
 import ReacentPosts from './RecentPosts';
-// import ArticleBoxes from '../home/articleAndNewsSection/ArticleBoxes';
 import ArticlesFooter from '../../generics/ArticlesFooter';
 import Categories from './Categories';
 import Links from './Links';
-// import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { useArticles } from '../../context/ArticleContext';
 
 
 const ArticleDetails = () => {
-  const [article, setArticle] = useState(null);
-
-  const param = useParams();
-  const id = param.id;
-  console.log(id);
-
+  // const [article, setArticle] = useState(null);
+  const { article, getArticle } = useArticles();
+  const { id } = useParams();
+  
+  // const param = useParams();
+  // const id = param.id;
+  // console.log(id);
+  
+  //ange id som dependens
+  useEffect(() => {
+    getArticle(id)
+  }, [id]);
   // const {id} = useParams();
 
   
@@ -35,20 +40,17 @@ const ArticleDetails = () => {
     return `${month} ${day}, ${year}`;
   }
 
-  const getArticle = async () => {
-    if(id !== "" || id !== undefined) {
-      const response = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
-      if(response.status === 200) {
-        const data = await response.json();
-        setArticle(data);
-        console.log(data);
-      }
-    }
-  }
-//ange id som dependens
-    useEffect(() => {
-      getArticle()
-    }, [id]);
+  // const getArticle = async () => {
+  //   if(id !== "" || id !== undefined) {
+  //     const response = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
+  //     if(response.status === 200) {
+  //       const data = await response.json();
+  //       setArticle(data);
+  //       console.log(data);
+  //     }
+  //   }
+  // }
+
 
     const recentPosts = [
       {title: "How To Blow Through Capital At An Incredible Rate"},
@@ -116,7 +118,7 @@ const ArticleDetails = () => {
 
               <div className="textPop">
                 
-                <p><span>" </span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+                <p><span>’’ </span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 </p>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
