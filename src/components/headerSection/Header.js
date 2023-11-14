@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import Button from "../../generics/Button";
 import "./Header.scss";
 import { Link, NavLink } from "react-router-dom";
 import ContactInfo from "./ContactInfo";
 import SocialMedia from "../../generics/SocialMedia";
+import MobileMenu from "./MobileMenu";
 
 
 const Header = () => {
@@ -15,6 +16,7 @@ const Header = () => {
     {icon: "location-dot", text: "Sveavägen 31, 111 34 STOCKHOLM"},
   ]
 
+  //generics
   const socialMedias = [
     {link: "https://www.facebook.com", icon:"facebook"},
     {link: "https://www.twitter.com", icon:"twitter"},
@@ -22,12 +24,18 @@ const Header = () => {
     {link: "https://www.linkedin.com", icon:"linkedin"}
   ]
 
+  const [openMenu, setOpenMenu] = useState(false);
+  // console.log(openMenu);
   return (
+    <>
+    {openMenu ? (<MobileMenu />) : (<></>)}
+
+
     <div className="gridWrapper">
       <header>
         <div className="container">
-          <button className="menuBar">
-            <i className="fa-solid fa-bars"></i>
+          <button className="menuBar" onClick={() => setOpenMenu(!openMenu)}>
+            {openMenu ? (<i className="fa-solid fa-xmark xMark"></i>) : (<i className="fa-solid fa-bars"></i>)}
           </button>
 
           <div className="logotype">
@@ -64,6 +72,7 @@ const Header = () => {
         </div>
       </header>
     </div>
+    </>
   );
 };
 

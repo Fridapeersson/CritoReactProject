@@ -1,0 +1,31 @@
+.mobileMenu {
+    background-color: #f0efe9;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 40px 0px;
+    z-index: 1;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #191919;
+        padding: 20px;
+
+
+        &:hover {
+            background-color: #a29e9e;
+        }
+    }
+
+    .active {
+        background-color: #a29e9e;
+    }
+}

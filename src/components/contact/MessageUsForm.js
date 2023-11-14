@@ -6,7 +6,6 @@ import * as Yup from "yup";
 const MessageUsForm = () => {
   //state hook för att hantera om meddelandet skickats eller inte
   const [messageSent, setMessageSent] = useState(false);
-  const [conflictMessage, setConflictMessage] = useState(false);
   // formik för hantering av formuläret
   const form = useFormik({
     initialValues: {

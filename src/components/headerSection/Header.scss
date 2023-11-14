@@ -37,6 +37,8 @@ header {
       font-size: 25px;
       border: none;
       background: transparent;
+      z-index: 2;
+      
 
       @media (min-width: 992px) {
         display: none;
@@ -46,6 +48,7 @@ header {
     .logotype {
       grid-area: logo;
       margin-right: 70px;
+      z-index: 2;
 
       @media (min-width: 992px) {
         display: block;
