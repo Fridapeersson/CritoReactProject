@@ -30,6 +30,10 @@
         .home {
           color: gray;
           font-weight: 300;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
         .connect {
           font-weight: 500;

@@ -36,7 +36,7 @@ const ProjectAndCase = () => {
             }
           </div>
           <div className="centerButton">
-            <Button url="/projectandcase/allrecentprojects" type="dark" text="All Reacent Projects">
+            <Button url="/projectandcase/allrecentprojects" type="dark" text="All Recent Projects">
                 <i className="fa-solid fa-arrow-up-right arrow"></i>
             </Button>
           </div>

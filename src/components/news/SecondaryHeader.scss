@@ -24,24 +24,22 @@
     .navlinks {
       display: flex;
       gap: 20px;
-      p {
-        padding-bottom: 20px;
-        
-        
-        .active {
-            color: #191919;
-        }
-        a {
-            text-decoration: none;
-            color: #b1a2a2;   
+      padding-bottom: 20px;
 
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-      }
+      .active {
+        color: #191919;
     }
+    a {
+        text-decoration: none;
+        color: #b1a2a2;   
+
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+  }
+
     h1 {
       font-size: 50px;
       font-weight: 700;

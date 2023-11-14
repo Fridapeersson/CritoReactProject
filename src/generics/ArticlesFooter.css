@@ -1,0 +1,149 @@
+.articleFooterSection .container .articleAndNews .sectionTitleWithButton {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .articleFooterSection .container .articleAndNews .sectionTitleWithButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .articleFooterSection .container .articleAndNews .sectionTitleWithButton {
+    margin: -40px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 769px) {
+  .articleFooterSection .container .articleAndNews .sectionTitleWithButton .sectionTitle {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .articleFooterSection .container .articleAndNews .sectionTitleWithButton .sectionTitle {
+    text-align: left;
+  }
+}
+.articleFooterSection .container .articleAndNews .sectionTitleWithButton .btn {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .articleFooterSection .container .articleAndNews .sectionTitleWithButton .btn {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 769px) {
+  .articleFooterSection .container .articleAndNews .articles {
+    margin-bottom: 60px;
+  }
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article {
+  margin-bottom: 20px;
+}
+@media (min-width: 769px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article {
+    padding: 20px;
+  }
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article:hover {
+  background: #f9d783;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article a {
+  text-decoration: none;
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article .imgContainer {
+  position: relative;
+  width: 100%;
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article .imgContainer img {
+  width: 100%;
+  z-index: -1;
+}
+@media (min-width: 769px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .imgContainer img {
+    height: 200px;
+  }
+}
+@media (min-width: 1400px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .imgContainer img {
+    height: 250px;
+  }
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article .imgContainer p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 18%;
+  padding: 2px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
+  background: #f9d783;
+}
+@media (min-width: 992px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .imgContainer p {
+    width: 18%;
+  }
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article .imgContainer p span {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText {
+  padding: 10px;
+}
+@media (min-width: 769px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText {
+    text-align: left;
+  }
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText .header {
+  font-weight: 700;
+}
+@media (min-width: 769px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText .header {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText .header {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText .header {
+    font-size: 22px;
+  }
+}
+.articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText p {
+  color: #6a6c71;
+}
+@media (min-width: 992px) {
+  .articleFooterSection .container .articleAndNews .articles .carouselContainer .article .articleText p {
+    font-size: 14px;
+  }
+}
+.articleFooterSection .container .articleAndNews .dots {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+.articleFooterSection .container .articleAndNews .dots .dot {
+  font-size: 70px;
+  color: RGBA(25, 25, 25, 0.4);
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.articleFooterSection .container .articleAndNews .dots .blackDot {
+  color: #191919;
+}
