@@ -6,10 +6,10 @@ import { useHeaderContext } from '../../context/HeaderContext';
 
 const MobileMenu = () => {
 
-    const {closeMenu} = useHeaderContext();
+    const {closeMobileMenu} = useHeaderContext();
     
     const handleClick = () => {
-        closeMenu();
+        closeMobileMenu();
     }
 
 

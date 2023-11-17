@@ -17,7 +17,6 @@ const ContactBoxes = ({icon, title, url, text1, text2}) => {
           
         </div>
       </div>
-      {/* "https://www.google.com/maps?q=Sveav%C3%A4gen+31%2C+111+43+Stockholm" */}
     </>
   );
 };

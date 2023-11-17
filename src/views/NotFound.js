@@ -1,11 +1,12 @@
 import React from 'react'
-import Footer from '../components/footer/Footer'
+import Footer from '../components/footer/Footer';
+import ErrorPage from '../components/errorPage/ErrorPage';
 
 const NotFound = () => {
   return (
     <>
-        <h1>Page not found</h1>
-        <Footer />
+      <ErrorPage />
+      <Footer />
     </>
   )
 }

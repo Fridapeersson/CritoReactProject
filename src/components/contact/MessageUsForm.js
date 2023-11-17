@@ -16,17 +16,19 @@ const MessageUsForm = () => {
     // Definerar "regler" för valideringen efter följande schema
     validationSchema: Yup.object({
       name: Yup.string()
-      .min(2, "Namn måste innehålla minst 2 tecken")
-      .required("Du måste ange ett namn"),
+      .min(2, "Name must contain at least 2 characters")
+      .required("You must enter a name")
+      .matches(/^[A-Za-zÅÄÖåäö]+(?: [A-Za-zÅÄÖåäö]+)?$/, "Only one blank space is allowed"),
 
       email: Yup.string()
-      .matches(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/, "Du måste ange en giltlig epostadress")
-      .email("Ogiltlig Email")
-      .required("Du måste ange en Email"),
+      .email("Invalid email")
+      .required("You must enter an email")
+      .matches(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/, "You must enter a valid email"),
 
       message: Yup.string()
-      .min(2, "Meddelandet måste innehålla minst 2 tecken")
-      .required("Du måste ange ett meddelande"),
+      .min(2, "Message must contain atleast 2 characters")
+      .required("You must enter a message")
+      .matches(/^(?!\s{2,}).*$/, "You must enter characters"),
     }),
 
     //Funktion när formuläret skickas
@@ -67,15 +69,11 @@ const MessageUsForm = () => {
         } else {
           console.log("Något annat gick fel!")
         }
-
       } catch (error) {
         console.log("Ett fel inträffade ", error)
       }
-
-      
     }
   })
-
 
   return (
     <>

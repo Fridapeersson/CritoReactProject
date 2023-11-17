@@ -307,7 +307,7 @@
             // }
           }
           .posts {
-            color: RGBA(25,25,25,0.7 );;
+            color: RGBA(25,25,25,0.7 );
           }
         }
       }
@@ -318,4 +318,10 @@
     }
   }
 
-      }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}

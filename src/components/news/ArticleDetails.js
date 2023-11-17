@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
-import NotFound from '../../views/NotFound';
 import SecondaryHeader from './SecondaryHeader';
 import Header from '../headerSection/Header';
 import Footer from '../footer/Footer';
@@ -17,16 +16,11 @@ const ArticleDetails = () => {
   const { article, getArticle } = useArticles();
   const { id } = useParams();
   
-  // const param = useParams();
-  // const id = param.id;
-  // console.log(id);
-  
-  //ange id som dependens
+  //anger id som dependencie
   useEffect(() => {
     getArticle(id)
   }, [id]);
   // const {id} = useParams();
-
   
   const formatDayMonthYearDate = (publishedDate) => {
     const date = new Date(publishedDate);
@@ -40,23 +34,10 @@ const ArticleDetails = () => {
     return `${month} ${day}, ${year}`;
   }
 
-  // const getArticle = async () => {
-  //   if(id !== "" || id !== undefined) {
-  //     const response = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
-  //     if(response.status === 200) {
-  //       const data = await response.json();
-  //       setArticle(data);
-  //       console.log(data);
-  //     }
-  //   }
-  // }
-
-
     const recentPosts = [
       {title: "How To Blow Through Capital At An Incredible Rate"},
       {title: "Design Studios That Everyone Should Know About?"},
       {title: "How did we get 1M+ visitors in 30 days without anything!"},
-      // {title: "Figma On Figma: How We Built Our Website Design System"},
     ]
 
     const categories = [
@@ -68,6 +49,7 @@ const ArticleDetails = () => {
       {title: "Education", posts: "14"},
     ]
 
+    //"knapparna" längst ner
     const links = [
       {title: "Digitalization"},
       {title: "School"},
@@ -84,7 +66,6 @@ const ArticleDetails = () => {
     <section className="articleDetailsSection">
       <div className="container">
         <div className="articleDetails">
-
 
           <div className="leftSide">
             <div className="articleTitle">
@@ -125,12 +106,6 @@ const ArticleDetails = () => {
 </p>
             </div>
 
-            {/* <Link>Digitalization</Link>
-            <Link>School</Link>
-            <Link>IT</Link>
-            <Link>Design</Link>
-            <Link>WOrk</Link>
-            <Link>Tech</Link> */}
             <div className="links">
               {
                 links.map((link, index) => (
@@ -138,7 +113,6 @@ const ArticleDetails = () => {
                 ))
               }
             </div>
-
           </div>
 
           <div className="rightSide">
@@ -162,7 +136,6 @@ const ArticleDetails = () => {
                   </div>
                 </Link>
               </div>
-              {/* <div className="line"></div> */}
             </div>  
 
             <div className="box2">
@@ -175,14 +148,9 @@ const ArticleDetails = () => {
                   ))
                 }
               </div>
-
             </div>
-
           </div>
         </div>
-
-
-
       </div>
       <div className="articleFooterContainer">
         <ArticlesFooter />
@@ -193,7 +161,11 @@ const ArticleDetails = () => {
   ) 
   :
   (
-    <NotFound />
+    <div className="loading">
+      <div className="spinner-grow" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+    </div>
   )
 }
 
